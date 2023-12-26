@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/flappymenu.wav-7fd0c2b70abd2652af881c7cc5ce272a.sample"
+
+[deps]
+
+source_file="res://assets/flappymenu.wav"
+dest_files=[ "res://.import/flappymenu.wav-7fd0c2b70abd2652af881c7cc5ce272a.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

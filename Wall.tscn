@@ -1,0 +1,26 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://assets/Barrier_bottom/Barrier_bottom_stone.png" type="Texture" id=1]
+[ext_resource path="res://assets/Barrier_top/Barrier_top_icicle2.png" type="Texture" id=2]
+
+[node name="Wall" type="Area2D"]
+
+[node name="SpriteBot" type="Sprite" parent="."]
+position = Vector2( 80, 740 )
+scale = Vector2( 0.3, 0.8 )
+texture = ExtResource( 1 )
+centered = false
+
+[node name="CollisionBot" type="CollisionPolygon2D" parent="."]
+position = Vector2( 145, 755 )
+polygon = PoolVector2Array( 1.43404, -9.45384, 11.1984, -7.24897, 36.3968, 46.9276, 94.0382, 121.893, 130.261, 252.359, 138.552, 382.259, 153.161, 384.132, 188.371, 432.452, 191.742, 609.648, -64.0936, 610.022, -56.9767, 535.856, -29.3304, 387.914, -24.2907, 246.803, -17.3611, 225.384, -26.8105, 123.443, -17.9911, 88.1651, -20.5109, 25.169, -11.6915, 1.86049 )
+
+[node name="SpriteTop" type="Sprite" parent="."]
+position = Vector2( 0, -200 )
+scale = Vector2( 0.62, 0.62 )
+texture = ExtResource( 2 )
+centered = false
+
+[node name="CollisionTop" type="CollisionPolygon2D" parent="."]
+position = Vector2( 0, -200 )
+polygon = PoolVector2Array( -1.05264, 0.154922, 7.27182, 41.7772, 66.7322, 127.4, 83.381, 198.752, 95.2731, 237.996, 109.544, 265.348, 132.139, 547.19, 135.706, 576.92, 149.977, 623.299, 157.112, 629.245, 161.869, 607.84, 185.653, 208.266, 251.059, -1.03429 )
