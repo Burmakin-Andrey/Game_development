@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Block_broken.mp3-e95abadaad82fae8ebbe32ae56f228a3.mp3str"
+
+[deps]
+
+source_file="res://assets/Block_broken.mp3"
+dest_files=[ "res://.import/Block_broken.mp3-e95abadaad82fae8ebbe32ae56f228a3.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

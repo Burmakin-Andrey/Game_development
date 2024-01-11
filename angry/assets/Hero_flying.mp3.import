@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Hero_flying.mp3-28c9a85f4911d0e1f2fb377381df4742.mp3str"
+
+[deps]
+
+source_file="res://assets/Hero_flying.mp3"
+dest_files=[ "res://.import/Hero_flying.mp3-28c9a85f4911d0e1f2fb377381df4742.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

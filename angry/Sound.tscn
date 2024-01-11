@@ -1,0 +1,23 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://assets/Block_broken.mp3" type="AudioStream" id=1]
+[ext_resource path="res://Sound.gd" type="Script" id=2]
+[ext_resource path="res://assets/Game.mp3" type="AudioStream" id=3]
+[ext_resource path="res://assets/Hero_flying.mp3" type="AudioStream" id=4]
+[ext_resource path="res://assets/Enemy_dead.mp3" type="AudioStream" id=7]
+
+[node name="Sound" type="Node"]
+script = ExtResource( 2 )
+
+[node name="BlockSound" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource( 1 )
+
+[node name="BackgroundSound" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource( 3 )
+volume_db = -20.0
+
+[node name="ShotSound" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource( 4 )
+
+[node name="DeathSound" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource( 7 )

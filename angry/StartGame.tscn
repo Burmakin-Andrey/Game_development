@@ -1,0 +1,49 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://assets/Button_start_state_2.png" type="Texture" id=1]
+[ext_resource path="res://assets/Background_menu.png" type="Texture" id=2]
+[ext_resource path="res://assets/Button_exit_state_2.png" type="Texture" id=3]
+[ext_resource path="res://StartButton.gd" type="Script" id=5]
+
+[node name="StartGame" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_right = -1024.0
+margin_bottom = -600.0
+rect_scale = Vector2( 0.453218, 0.571019 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect" type="TextureRect" parent="."]
+rect_scale = Vector2( 1.2, 0.961 )
+texture = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="StartButton" type="TextureButton" parent="."]
+margin_left = 672.965
+margin_top = 658.472
+margin_right = 1102.97
+margin_bottom = 805.472
+texture_normal = ExtResource( 1 )
+expand = true
+script = ExtResource( 5 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ExitButton" type="TextureButton" parent="."]
+margin_left = 1176.03
+margin_top = 656.721
+margin_right = 1567.03
+margin_bottom = 799.721
+texture_normal = ExtResource( 3 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[connection signal="button_down" from="StartButton" to="StartButton" method="_on_StartButton_button_down"]
+[connection signal="button_down" from="ExitButton" to="StartButton" method="_on_ExitButton_button_down"]
